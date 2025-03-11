@@ -5,7 +5,7 @@ import Input from "@/components/ui/atoms/input";
 import Button from "@/components/ui/atoms/button";
 import Section from "@/components/ui/atoms/section";
 import React, { useActionState, useRef } from "react";
-import { ContactFormActionResponse } from "@/types/auth.type";
+import { ContactFormActionResponse } from "@/types/contact.type";
 
 type ContactFormProps = {
   onSubmitAction: ContactFormActionResponse

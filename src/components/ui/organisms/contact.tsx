@@ -2,8 +2,8 @@
 
 import React from "react";
 import ContactForm from "../molecules/contactForm";
-import { ContactResponse } from "@/types/auth.type";
-import AuthService from "@/services/auth/auth.service";
+import { ContactResponse } from "@/types/contact.type";
+import AuthService from "@/services/contact.service";
 
 async function Contact() {
 

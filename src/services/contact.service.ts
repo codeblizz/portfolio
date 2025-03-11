@@ -1,19 +1,19 @@
-import { LoginResponse } from "@/types/auth.type";
+import { ContactResponse } from "@/types/contact.type";
 
 const AuthService = {
   someAPI: async function (data: unknown) {
     console.log("data", data);
     return {
-      message: "Login successful",
+      message: "Message successful",
       statusCode: 200,
     };
   },
   onSubmitAction: async function (
     formData: FormData,
-    prevResult: LoginResponse
+    prevResult: ContactResponse
   ) {
-    const dataUsername = formData.get("username");
-    const result = await this.someAPI(dataUsername);
+    const emaiLData = formData.get("email");
+    const result = await this.someAPI(emaiLData);
     return { ...prevResult, ...result };
   },
 };
