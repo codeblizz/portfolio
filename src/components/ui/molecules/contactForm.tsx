@@ -4,16 +4,15 @@ import Form from "@/components/ui/atoms/form";
 import Input from "@/components/ui/atoms/input";
 import Button from "@/components/ui/atoms/button";
 import Section from "@/components/ui/atoms/section";
-import React, { useActionState, useRef } from "react";
-import { ContactFormActionResponse } from "@/types/contact.type";
+import React, { useRef, useActionState } from "react";
+import { submitContactForm } from "@/app/contact/actions";
 
-type ContactFormProps = {
-  onSubmitAction: ContactFormActionResponse
-};
-
-function ContactForm({ onSubmitAction }: ContactFormProps) {
+function ContactForm() {
   const inputRef = useRef(null);
-  const [result, formAction, isPending] = useActionState(onSubmitAction, { message: "", statusCode: 0 });
+  const [result, formAction, isPending] = useActionState(submitContactForm, {
+    message: "",
+    statusCode: 0,
+  });
 
   return (
     <Form className="" action={formAction}>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Html from "@/components/ui/atoms/html";
 import Body from "@/components/ui/atoms/body";
 import Main from "@/components/ui/atoms/main";
@@ -24,12 +24,13 @@ export const metadata: Metadata = {
   applicationName: "Portfolio",
   description:
     "Portfolio of a software developer specializing in betting apps and mini app integrations.",
-  viewport: { initialScale: 1, width: "device-width", height: "device-height" },
   authors: [{ url: "http://www.myprofile.com", name: "Collins Maduka" }],
   icons: {
     icon: "/portfolio.ico",
   },
 };
+
+export const viewport: Viewport = { width: "device-width", initialScale: 1, height: "device-height" };
 
 export default function RootLayout({
   children,
