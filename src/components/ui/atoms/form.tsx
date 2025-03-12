@@ -5,7 +5,7 @@ import { BaseElement } from "@/types/ui/base.type";
 
 interface FormElement extends BaseElement {
   action?: string | ((formData: FormData) => void | Promise<void>);
-  onSubmit?: () => void;
+  onSubmit?: React.FormEventHandler<HTMLFormElement>;
 }
 
 function Form({ className, action, onSubmit, children }: FormElement) {
