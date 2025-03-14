@@ -24,9 +24,13 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: '/${{ github.event.repository.name }}'
       - name: Create .nojekyll
         run: touch out/.nojekyll
+      - name: Move Build Output to Docs folder
+        run: |
+          mkdir -p ./docs
+          cp -r ./out/* ./docs/
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: out
+          folder: docs
           clean: true
