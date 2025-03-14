@@ -20,6 +20,8 @@ jobs:
         run: npm install -g pnpm && pnpm install
       - name: Build
         run: pnpm run build
+        run: pnpm run build
+        run: touch out/.nojekyll
         env:
           NEXT_PUBLIC_BASE_PATH: '/${{ github.event.repository.name }}'
       - name: Deploy to GitHub Pages
