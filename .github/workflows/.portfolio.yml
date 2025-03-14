@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install -g pnpm && pnpm install
       - name: Build
-        run: pnpm run build
+        run: pnpm run ci
         run: pnpm run build
         run: touch out/.nojekyll
         env:
