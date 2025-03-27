@@ -11,7 +11,7 @@ function MenuDropDown({
   setOpenMenu: (data: boolean) => void;
 }) {
   const { isDark } = useStyleContext();
-  let domNode = useClickOutside<HTMLElement>(() => setOpenMenu(false));
+  const domNode = useClickOutside<HTMLElement>(() => setOpenMenu(false));
 
   return (
     <nav
