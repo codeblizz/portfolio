@@ -368,8 +368,8 @@ const talkSection = {
       image: "",
       title: "Build Actions For Google Assistant",
       subtitle: "Hackerthon at DevPost 2025",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
+      slides_url: "",
+      event_url: "",
     },
   ],
 };
@@ -378,7 +378,7 @@ const contactInfo = {
   number: "+971-552825364",
   title: `Contact Me ${emoji.telContact}`,
   email_address: "codeblizzen@gmail.com",
-  subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "Whether it’s a collaboration idea or a friendly hello, I’d love to hear from you. Let’s connect!",
 };
 
 const twitterDetails = {

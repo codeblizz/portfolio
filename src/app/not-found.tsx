@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import "./globals.css";
+import "./styles/globals.css";
 
 export default function NotFound() {
   const router = useRouter();
