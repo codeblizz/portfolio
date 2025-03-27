@@ -1,11 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Html from "@/components/ui/atoms/html";
-import Body from "@/components/ui/atoms/body";
-import Main from "@/components/ui/atoms/main";
-import Header from "@/components/ui/atoms/header";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "@/components/ui/molecules/navbar";
-import Footer from "@/components/ui/molecules/footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,13 +18,14 @@ export const metadata: Metadata = {
   applicationName: "Portfolio",
   description:
     "Portfolio of a software developer specializing in betting apps and mini app integrations.",
-  authors: [{ url: "http://www.myprofile.com", name: "Collins Maduka" }],
+  authors: [{ url: "http://www.github.com/codeblizz", name: "Collins Maduka" }],
   icons: {
-    icon: "/portfolio.ico",
+    icon: "/favicon.ico",
   },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, height: "device-height" };
+
 
 export default function RootLayout({
   children,
@@ -38,16 +33,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Html>
-      <Body
+    <html lang="en">
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header className="">
-          <Navbar />
-        </Header>
-        <Main className="">{children}</Main>
-        <Footer />
-      </Body>
-    </Html>
+        {children}
+      </body>
+    </html>
   );
 }

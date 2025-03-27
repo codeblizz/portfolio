@@ -1,17 +1,32 @@
-import About from "@/components/ui/molecules/about";
-import Contact from "@/components/ui/molecules/contact";
-import Experience from "@/components/ui/molecules/experience";
-import Hero from "@/components/ui/molecules/hero";
-import Projects from "@/components/ui/molecules/projects";
+import Skills from "@/components/ui/organisms/skills";
+import Header from "@/components/ui/molecules/header";
+import Footer from "@/components/ui/molecules/footer";
+import Top from "@/components/ui/organisms/topButton";
+import Contact from "@/components/ui/organisms/contact";
+import Profile from "@/components/ui/organisms/profile";
+import Greeting from "@/components/ui/organisms/intro";
+import { StyleProvider } from "@/contexts/styleContext";
+import Projects from "@/components/ui/organisms/projects";
+import Education from "@/components/ui/organisms/education";
+import Experience from "@/components/ui/organisms/experience";
+import StackProgress from "@/components/ui/organisms/skillProgress";
+import StartupProject from "@/components/ui/organisms/startupProjects";
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <About />
-      <Projects />
+    <StyleProvider>
+      <Header />
+      <Greeting />
+      <Skills />
+      <StackProgress />
+      <Education />
       <Experience />
+      <Projects />
+      <StartupProject />
+      <Profile />
       <Contact />
-    </>
+      <Top />
+      <Footer /> 
+    </StyleProvider>
   );
 }
