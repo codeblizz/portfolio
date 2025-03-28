@@ -24,7 +24,6 @@ jobs:
       - name: Install Ruby dependencies
         run: |
           gem install bundler
-          gem install faraday-retry
           bundle install
       - name: Build
         run: pnpm run build
