@@ -18,7 +18,7 @@ export default function EducationCard({ school }: { school: SchoolType }) {
 
   return (
     <Fade direction="left" duration={1000}>
-      <div className="flex items-center gap-x-3 mx-auto w-[100%]">
+      <div className="flex flex-col md:flex-row items-center gap-x-3 mx-auto w-[100%]">
         <div className="h-full max-w-[10%]">
           <NextImage
             width={150}
@@ -27,7 +27,7 @@ export default function EducationCard({ school }: { school: SchoolType }) {
             src={school.logo}
             alt={school.schoolName}
             crossOrigin={"anonymous"}
-            className="w-[70%] h-full rounded-full"
+            className="md:w-[70%] h-full rounded-full"
           />
         </div>
         <div className="max-w-[90%] overflow-x-hidden text-ellipsis">

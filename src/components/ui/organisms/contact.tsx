@@ -7,10 +7,11 @@ import { contactInfo } from "@/constants/portfolio.data";
 
 export default function Contact() {
   return (
-    <Fade direction="right" duration={1000}>
-      <div className="flex flex-col md:grid md:grid-cols-3 justify-between items-center py-5 mx-auto w-[90%] border-t border-t-gray-500/50">
-        <div className="md:col-span-2 flex flex-col w-auto gap-y-3">
-          <h1 className="inline-flex text-4xl font-extrabold items-center">
+    <div className="mx-auto w-[90%] py-6">
+    <Fade direction="left" duration={1000}>
+      <div className="flex flex-col md:grid md:grid-cols-3 justify-between items-center">
+        <div className="md:col-span-2 flex flex-col w-auto gap-y-3 text-center md:text-start">
+          <h1 className="text-4xl font-extrabold items-center">
             {contactInfo.title}
           </h1>
           <p className="capitalize text-lg text-slate-600/80">
@@ -36,5 +37,6 @@ export default function Contact() {
         />
       </div>
     </Fade>
+    </div>
   );
 }

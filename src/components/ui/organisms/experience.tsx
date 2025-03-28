@@ -14,34 +14,35 @@ export type WorkExperienceCard = {
 };
 
 export default function WorkExperience() {
-  
   if (workExperiences.viewExperiences) {
     return (
-      <Fade direction="right" duration={1000}>
-        <div
-          className="flex flex-col w-[90%] mx-auto my-6 border-b pb-5 border-b-gray-500/50"
-          id="experience"
-        >
-          <h1 className="text-4xl font-extrabold mb-4 text-center md:text-start">Experiences</h1>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-4">
-            {workExperiences.experience.map((card, idx) => {
-              return (
-                <ExperienceCard
-                  key={idx}
-                  cardInfo={{
-                    role: card.role,
-                    desc: card.desc,
-                    date: card.date,
-                    company: card.company,
-                    companyLogo: card.companyLogo,
-                    descBullets: card.descBullets ?? [""],
-                  }}
-                />
-              );
-            })}
+      <div className="w-[90%] mx-auto text-center md:text-start my-6 border-b border-b-gray-500/50">
+        <h1 className="text-4xl font-extrabold mb-4">Experiences</h1>
+        <Fade direction="right" duration={1000}>
+          <div
+            className="flex flex-col pb-5 "
+            id="experience"
+          >
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(290px,1fr))] gap-4">
+              {workExperiences.experience.map((card, idx) => {
+                return (
+                  <ExperienceCard
+                    key={idx}
+                    cardInfo={{
+                      role: card.role,
+                      desc: card.desc,
+                      date: card.date,
+                      company: card.company,
+                      companyLogo: card.companyLogo,
+                      descBullets: card.descBullets ?? [""],
+                    }}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     );
   }
   return null;

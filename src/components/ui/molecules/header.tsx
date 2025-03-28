@@ -23,31 +23,39 @@ function Header() {
 
   return (
     <Headroom className="w-full fixed z-50">
-      <header className={lib.cn([isDark ? "bg-gray-900" : "bg-slate-100", "flex fixed w-full items-center min-w-max overflow-auto shadow-md md:text-clip border-b border-b-gray-500/50 gap-8 justify-between py-4 px-5 sm:px-10 md:px-16 mx-auto"])}>
-        <Link href="/" className="mt-2">
-          <span className="md:text-4xl text-2xl sm:text-3xl text-center font-extrabold text-nowrap">
+      <header
+        className={lib.cn([
+          isDark ? "bg-gray-900" : "bg-slate-100",
+          "fixed min-w-max shadow-md md:text-clip border-b border-b-gray-500/50 py-6 w-full",
+        ])}
+      >
+        <div className="w-[90%] mx-auto flex items-center gap-x-8 justify-between">
+          <Link
+            href="/"
+            className="md:text-4xl text-2xl sm:text-3xl text-center font-extrabold text-nowrap"
+          >
             {greeting.username}
-          </span>
-        </Link>
-        <ul className="sm:flex md:text-[16px] text-sm text-center items-center justify-between gap-x-5 hidden sm:visible">
-          {navbarList.map((list, key) => {
-            if (list.name === "experience" && exp === false) return null;
-            return (
-              <li key={key} className="hover:text-blue-300 text-nowrap">
-                <a className="" href={list.url}>
-                  {list.label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-        {isDark ? (
-          <Sunlight onClick={changeTheme} className="cursor-pointer" />
-        ) : (
-          <Moon className="cursor-pointer" onClick={changeTheme} />
-        )}
-        <Hamburger onClick={onClick} />
-        {openMenu && <MenuDropDown setOpenMenu={setOpenMenu} />}
+          </Link>
+          <ul className="hidden md:flex md:text-[16px] text-sm text-center items-center justify-between gap-x-5">
+            {navbarList.map((list, key) => {
+              if (list.name === "experience" && exp === false) return null;
+              return (
+                <li key={key} className="hover:text-blue-300 text-nowrap">
+                  <a className="" href={list.url}>
+                    {list.label}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          {isDark ? (
+            <Sunlight onClick={changeTheme} className="cursor-pointer" />
+          ) : (
+            <Moon className="cursor-pointer" onClick={changeTheme} />
+          )}
+          <Hamburger onClick={onClick} />
+          {openMenu && <MenuDropDown setOpenMenu={setOpenMenu} />}
+        </div>
       </header>
     </Headroom>
   );

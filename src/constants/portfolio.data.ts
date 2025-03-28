@@ -3,9 +3,10 @@ const emoji = {
   rocket: "\u{1F680}",
   wavyHand: "\u{1F44B}",
   achiever: "\u{1F397}",
+  bookmark: "\u{1F516}",
   telContact: "\u{260E}",
   smileyTears: "\u{1F605}",
-  goldenThunder: "\u{26A1}",
+  handPointUp: "\u{1F446}"
 }
 
 const greeting = {
