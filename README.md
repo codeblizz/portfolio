@@ -61,7 +61,7 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-This portfolio is deployed on **[Github Pages](https://github.com/)**. Visit the live site here: [https://codeblizz.github.io/portfolio/](#)
+This portfolio is deployed on **[Github Pages](https://github.com/)**. Visit the live site here: [https://codeblizz.github.io/portfolio/]
 
 ---
 
