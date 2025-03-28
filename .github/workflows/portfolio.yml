@@ -27,7 +27,7 @@ jobs:
       - name: Create .nojekyll
         run: touch out/.nojekyll
       - name: Ensure docs directory exists
-        run: mkdir -p /github/workspace/docs
+        run: mkdir -p ${{ github.workspace }}/docs
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
