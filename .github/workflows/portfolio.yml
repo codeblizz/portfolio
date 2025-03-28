@@ -25,6 +25,7 @@ jobs:
         run: |
           gem install bundler
           gem install faraday-retry
+          bundle install
       - name: Build
         run: pnpm run build
         env:
@@ -33,10 +34,11 @@ jobs:
         run: mkdir -p out
       - name: Create .nojekyll
         run: touch out/.nojekyll
+      - name: Ensure docs directory exists
+        run: mkdir -p /github/workspace/docs
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
           clean: true
-
