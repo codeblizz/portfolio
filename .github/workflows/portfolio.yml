@@ -18,16 +18,14 @@ jobs:
           cache-dependency-path: ./pnpm-lock.yaml
       - name: Install dependencies
         run: npm install -g pnpm && pnpm install
-      - name: Build
-        run: pnpm run build
+      - name: Build site
+        run: |
+          mkdir -p docs
+          pnpm run build
         env:
           NEXT_PUBLIC_BASE_PATH: '/${{ github.event.repository.name }}'
-      - name: Create out directory
-        run: mkdir -p docs
       - name: Create .nojekyll
         run: touch docs/.nojekyll
-      - name: Ensure docs directory exists
-        run: mkdir -p ${{ github.workspace }}/docs
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
