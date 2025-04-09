@@ -24,8 +24,11 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1, height: "device-height" };
-
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  height: "device-height",
+};
 
 export default function RootLayout({
   children,
@@ -37,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
