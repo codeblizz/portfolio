@@ -2,7 +2,7 @@
 import React from "react";
 import NextImage from "next/image";
 import { Fade } from "react-awesome-reveal";
-import { bigProjects } from "@/constants/portfolio.data";
+import { bigProjects } from "@/constants";
 
 export default function StartupProject() {
   function openProjectInNewWindow(url: string) {

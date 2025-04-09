@@ -12,7 +12,7 @@ import {
   greeting,
   workExperiences,
   navbarList,
-} from "@/constants/portfolio.data";
+} from "@/constants";
 
 function Header() {
   const exp = workExperiences.viewExperiences;

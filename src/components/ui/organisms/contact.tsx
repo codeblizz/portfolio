@@ -3,7 +3,7 @@
 import React from "react";
 import NextImage from "next/image";
 import { Fade } from "react-awesome-reveal";
-import { contactInfo } from "@/constants/portfolio.data";
+import { contactInfo } from "@/constants";
 
 export default function Contact() {
   return (

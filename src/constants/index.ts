@@ -11,7 +11,7 @@ const emoji = {
 
 const greeting = {
   username: "Collins Maduka",
-  title: "Hi all, I'm Collins",
+  title: "Hi, I'm Collins",
   subTitle:
     `A Results Driven Software Developer ${emoji.rocket} with an hands-on experience in Web and Mobile applications development using JavaScript / Typescript / Reactjs / NextJS / Java / Nodejs / SpringBoot / React Native / Tailwindcss and some other auxiliary libraries and frameworks.`,
   resumeLink:
@@ -378,8 +378,8 @@ const talkSection = {
 const contactInfo = {
   number: "+971-552825364",
   title: `Contact Me ${emoji.telContact}`,
-  email_address: "codeblizzen@gmail.com",
-  subtitle: "Whether it’s a collaboration idea or a friendly hello, I’d love to hear from you. Let’s connect!",
+  email_address: "collins.maduka.dev@gmail.com",
+  subtitle: "Feel free to reach out with any questions, ideas, or simply to introduce yourself. I'm looking forward to connecting!",
 };
 
 const twitterDetails = {

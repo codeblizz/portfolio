@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { emoji } from "@/constants/portfolio.data";
+import { emoji } from "@/constants";
 
 export default function ScrollTop() {
   function scrollTopEvent() {

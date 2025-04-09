@@ -1,7 +1,7 @@
 "use client";
 
 import ApolloClient, { gql } from "apollo-boost";
-import { openSource } from "@/constants/portfolio.data";
+import { openSource } from "@/constants";
 import Loading from "@/components/ui/organisms/loading";
 import { GitHubProfile } from "@/components/ui/molecules/githubProfile";
 import React, { useState, useEffect, lazy, Suspense, useCallback } from "react";

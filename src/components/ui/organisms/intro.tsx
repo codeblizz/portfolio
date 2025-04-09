@@ -2,7 +2,7 @@
 import React from "react";
 import NextImage from "next/image";
 import { Fade } from "react-awesome-reveal";
-import { emoji, greeting } from "@/constants/portfolio.data";
+import { emoji, greeting } from "@/constants";
 
 export default function Greeting() {
   return (

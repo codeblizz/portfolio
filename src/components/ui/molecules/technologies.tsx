@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { skillsSection } from "@/constants/portfolio.data";
+import { skillsSection } from "@/constants";
 
 export default function Skills() {
   return (

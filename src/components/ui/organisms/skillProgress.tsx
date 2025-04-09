@@ -2,7 +2,7 @@
 import React from "react";
 import NextIMage from "next/image";
 import { Fade } from "react-awesome-reveal";
-import { techStack } from "@/constants/portfolio.data";
+import { techStack } from "@/constants";
 
 export default function SkillProgress() {
   if (techStack.viewSkillBars) {

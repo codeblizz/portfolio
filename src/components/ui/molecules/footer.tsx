@@ -11,12 +11,12 @@ export default function Footer() {
           {"Made with ❤️ by Collins Maduka"}
         </p>
         <div className="flex flex-col text-[16px] text-center gap-y-4 text-slate-600/80">
-          <span>
+          {/* <span>
             Theme by{" "}
             <a href="https://github.com/codeblizz/collins.maduka.dev" className="italic underline underline-offset-3">
-              Codeblizz
+              Collins
             </a>
-          </span>
+          </span> */}
           <p>&copy;{new Date().getFullYear()}. All rights reserved.</p>
         </div>
       </footer>

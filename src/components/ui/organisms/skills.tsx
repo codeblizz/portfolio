@@ -3,7 +3,7 @@ import React from "react";
 import NextImage from "next/image";
 import { Fade } from "react-awesome-reveal";
 import Technologies from "@/components/ui/molecules/technologies";
-import { emoji, skillsSection } from "@/constants/portfolio.data";
+import { emoji, skillsSection } from "@/constants";
 
 export default function Skills() {
   return (
@@ -24,7 +24,7 @@ export default function Skills() {
             />
           </div>
           <div className="md:col-span-2 flex w-full flex-col h-[14rem] border shadow-sm shadow-slate-300/40 border-slate-600/80 overflow-y-scroll">
-            <h1 className="text-2xl fixed uppercase underline font-bold bg-slate-600 px-4 py-[2px]">
+            <h1 className="text-2xl fixed uppercase font-bold text-white/50 bg-slate-600 px-4 py-[2px]">
               {skillsSection.title}{" "}
             </h1>
             <label className="flex flex-col border-t border-t-slate-600/80 text-sm text-slate-600/80 gap-y-1 mt-9">

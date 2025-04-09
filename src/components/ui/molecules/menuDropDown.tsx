@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import lib from "@/helpers/lib";
-import { navbarList } from "@/constants/portfolio.data";
+import { navbarList } from "@/constants";
 import { useStyleContext } from "@/contexts/styleContext";
 import useClickOutside from "@/components/hook/useClickOutside";
 

@@ -5,7 +5,7 @@ import { gql } from "apollo-boost";
 import ApolloClient from "apollo-boost";
 import Loading from "@/components/ui/organisms/loading";
 import { RepoType } from "@/components/ui/molecules/githubRepo";
-import { openSource, socialMediaLinks } from "@/constants/portfolio.data";
+import { openSource, socialMediaLinks } from "@/constants";
 import React, { useState, useEffect, Suspense, lazy, useCallback } from "react";
 import { Fade } from "react-awesome-reveal";
 

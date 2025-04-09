@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { educationInfo } from "@/constants/portfolio.data";
+import { educationInfo } from "@/constants";
 import EducationCard from "@/components/ui/molecules/education";
 
 export default function Education() {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import { workExperiences } from "@/constants/portfolio.data";
+import { workExperiences } from "@/constants";
 import ExperienceCard from "@/components/ui/molecules/experience";
 
 export type WorkExperienceCard = {
